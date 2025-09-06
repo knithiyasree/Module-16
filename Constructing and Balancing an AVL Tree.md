@@ -29,13 +29,20 @@ To write a Python program to construct an **AVL tree**, balance it, and print th
 ```
 from TreeAVL.AVL import AVL
 
+def getDictTree(self):
+    return self.dict_tree
+
 def Construct_AVL(L):
-    tree=AVL(L)
-    print("Length of an AVL Tree is",tree.length_tree)
+  tree = AVL(L)
+  print("AVL Tree Before Balancing\n",getDictTree(tree))
+  tree.BalanceTree()
+  print("AVL Tree After Balancing\n",getDictTree(tree))
+
 ```
 
 ## OUTPUT
-<img width="1162" height="181" alt="image" src="https://github.com/user-attachments/assets/87bedc21-d9f0-4fc8-bf5a-a4ae69dc9dc7" />
+<img width="1398" height="232" alt="image" src="https://github.com/user-attachments/assets/eec19c63-a3b7-4bef-a99e-1795cd35cccd" />
+
 
 
 ## RESULT
